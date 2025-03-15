@@ -1,0 +1,98 @@
+/* For the main layout */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Adjust based on your navbar height */
+    padding: 2rem;
+    background-color: #F6FFF8;
+  }
+  
+/* For the description component */
+.description-container {
+    margin-top: 100px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .description-container h1 {
+    margin-top: 100px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #6B9080;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .description-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #6B9080;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  /* For the button component */
+  .notebook-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nonotes-button {
+    display: inline-block;
+    background-color: #6B9080;
+    color: #F6FFF8;
+    text-decoration: none;
+    padding: 16px 36px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    min-width: 220px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(107, 144, 128, 0.3);
+  }
+  
+  .nonotes-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #A4C3B2;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .nonotes-button:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .nonotes-button:hover {
+    color: #F6FFF8;
+    box-shadow: 0 6px 20px rgba(107, 144, 128, 0.5);
+    transform: translateY(-3px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .nonotes-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(107, 144, 128, 0.4);
+  }

@@ -1,0 +1,36 @@
+/* Add this to your CSS file */
+.notebook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Adjust 80px to match your navbar height */
+    padding: 2rem;
+  }
+  
+  .nonotes-button {
+    display: inline-block;
+    background-color: #6B9080;
+    color: #F6FFF8;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(107, 144, 128, 0.3);
+    text-align: center;
+    min-width: 200px;
+  }
+  
+  .nonotes-button:hover {
+    background-color: #A4C3B2;
+    color: #F6FFF8;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(107, 144, 128, 0.4);
+  }
+  
+  .nonotes-button:active {
+    transform: translateY(0) scale(1);
+  }
